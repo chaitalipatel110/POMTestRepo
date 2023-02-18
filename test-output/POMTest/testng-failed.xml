@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [POMTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="POMTest Test Cases(failed)">
+    <classes>
+      <class name="com.pom.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginPageTitleTest"/>
+          <include name="pomTextTest"/>
+          <include name="loginTest"/>
+          <include name="pomImageTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.pom.qa.testcases.LoginPageTest -->
+      <class name="com.pom.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickorderhistorylinkTest"/>
+          <include name="clickcreditcardslinkTest"/>
+          <include name="clickupdatepasswordlinkTest"/>
+          <include name="pomsignoutTest"/>
+          <include name="pommyaccountTest"/>
+          <include name="clickaddresseslinkTest"/>
+          <include name="clickwishlistlinkTest"/>
+          <include name="clickprofileTest"/>
+        </methods>
+      </class> <!-- com.pom.qa.testcases.HomePageTest -->
+      <class name="com.pom.qa.testcases.ProfilePageTest">
+        <methods>
+          <include name="validateProfilelabelTest"/>
+          <include name="selectcheckbox_2"/>
+          <include name="VerifylnamefieldTest"/>
+          <include name="tearDown"/>
+          <include name="selectcheckbox_1"/>
+          <include name="VerifyfnamefieldTest"/>
+          <include name="VerifyemailfieldTest"/>
+          <include name="setUp"/>
+          <include name="presssavechanges_btn"/>
+        </methods>
+      </class> <!-- com.pom.qa.testcases.ProfilePageTest -->
+    </classes>
+  </test> <!-- POMTest Test Cases(failed) -->
+</suite> <!-- Failed suite [POMTest] -->

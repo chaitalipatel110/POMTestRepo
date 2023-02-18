@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="false" name="POMTest">
+   <listeners>
+		<listener class-name="com.pom.qa.ExtentReportListener.ExtenetReporterNG" />
+	</listeners>
+  <test name="POMTest Test Cases">
+    <classes>
+      <class name="com.pom.qa.testcases.LoginPageTest"/>
+      <class name="com.pom.qa.testcases.HomePageTest"/>  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
