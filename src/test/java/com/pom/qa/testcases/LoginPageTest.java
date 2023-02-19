@@ -1,5 +1,6 @@
 package com.pom.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,6 +26,9 @@ public class LoginPageTest extends TestBase{
 		loginPage = new LoginPage();
 		
 		loginPage.clickminimizeicon();	
+		
+		Logger print = Logger.getLogger("devpinoyLogger");
+		print.debug("hello");  //System.out.println("hello");
 	}
 	
 	@Test(priority = 1,groups = "init1")
