@@ -27,8 +27,6 @@ public class LoginPageTest extends TestBase{
 		
 		loginPage.clickminimizeicon();	
 		
-		Logger print = Logger.getLogger("devpinoyLogger");
-		print.debug("hello");  //System.out.println("hello");
 	}
 	
 	@Test(priority = 1,groups = "init1")

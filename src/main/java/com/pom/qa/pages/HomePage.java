@@ -123,12 +123,12 @@ public class HomePage extends TestBase{
 		return M_title1.isDisplayed();
 	}
 	
-	//public SealyPage click_Sealy_link() {
-	public void click_Sealy_link() {
+	public SealyPage click_Sealy_link() {
+	//public void click_Sealy_link() {
 		Actions action = new Actions(driver);
 		action.moveToElement(Mattresses).build().perform();
 		M_title1_link1.click();
-		//return new SealyPage();
+		return new SealyPage();
 		
 	}
 	

@@ -19,8 +19,8 @@ import com.pom.qa.testdata.Xls_Reader;
 
 public class TestUtil extends TestBase {
 	
-	public static long PAGE_LOAD_TIMEOUT = 50;
-	public static  long IMPLICIT_WAIT = 10;
+	public static long PAGE_LOAD_TIMEOUT = 30;
+	public static  long IMPLICIT_WAIT = 20;
 	//public static String TESTDATA_SHEET_PATH="C:\\qa\\Selenium_Workspace\\POMTest\\src\\main\\java\\com\\pom\\qa\\testdata\\POM_myaccount.xlsx";
 	public static String TESTDATA_SHEET_PATH="C:/qa/Selenium_Workspace/POMTest/src/main/java/com/pom/qa/testdata/POM_myaccount.xlsx";
 	static Xls_Reader xlsData = new Xls_Reader(TESTDATA_SHEET_PATH);

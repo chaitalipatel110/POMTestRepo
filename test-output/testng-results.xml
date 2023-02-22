@@ -1,64 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-19T14:42:31 CST" name="Default suite" finished-at="2023-02-19T14:44:40 CST" duration-ms="128942">
+  <suite started-at="2023-02-21T18:58:22 CST" name="POMTest by groups" finished-at="2023-02-21T18:59:16 CST" duration-ms="54657">
     <groups>
-      <group name="init1">
-        <method signature="LoginPageTest.pomImageTest()[pri:1, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" name="pomImageTest" class="com.pom.qa.testcases.LoginPageTest"/>
-      </group> <!-- init1 -->
+      <group name="init2">
+        <method signature="HomePageTest.click_Sealy_Test()[pri:10, instance:com.pom.qa.testcases.HomePageTest@59af0466]" name="click_Sealy_Test" class="com.pom.qa.testcases.HomePageTest"/>
+      </group> <!-- init2 -->
     </groups>
-    <test started-at="2023-02-19T14:42:31 CST" name="Default test" finished-at="2023-02-19T14:44:40 CST" duration-ms="128942">
-      <class name="com.pom.qa.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:42:31 CST" name="setUp" finished-at="2023-02-19T14:42:57 CST" duration-ms="26288" status="PASS">
+    <test started-at="2023-02-21T18:58:22 CST" name="GRP-init2" finished-at="2023-02-21T18:59:16 CST" duration-ms="54657">
+      <class name="com.pom.qa.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pom.qa.testcases.HomePageTest@59af0466]" started-at="2023-02-21T18:58:22 CST" name="setUp" finished-at="2023-02-21T18:59:07 CST" duration-ms="44908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pomImageTest()[pri:1, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:42:57 CST" name="pomImageTest" finished-at="2023-02-19T14:43:03 CST" duration-ms="6230" status="PASS">
+        <test-method signature="click_Sealy_Test()[pri:10, instance:com.pom.qa.testcases.HomePageTest@59af0466]" started-at="2023-02-21T18:59:07 CST" name="click_Sealy_Test" finished-at="2023-02-21T18:59:10 CST" duration-ms="3854" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pomImageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:43:03 CST" name="tearDown" finished-at="2023-02-19T14:43:07 CST" duration-ms="3474" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:43:07 CST" name="setUp" finished-at="2023-02-19T14:43:31 CST" duration-ms="24042" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="pomTextTest()[pri:2, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:43:31 CST" name="pomTextTest" finished-at="2023-02-19T14:43:35 CST" duration-ms="3848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pomTextTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:43:35 CST" name="tearDown" finished-at="2023-02-19T14:43:39 CST" duration-ms="4232" status="PASS">
+        </test-method> <!-- click_Sealy_Test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pom.qa.testcases.HomePageTest@59af0466]" started-at="2023-02-21T18:59:10 CST" name="tearDown" finished-at="2023-02-21T18:59:16 CST" duration-ms="5820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:43:39 CST" name="setUp" finished-at="2023-02-19T14:44:01 CST" duration-ms="22440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:3, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:44:01 CST" name="loginTest" finished-at="2023-02-19T14:44:04 CST" duration-ms="2964" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:44:04 CST" name="tearDown" finished-at="2023-02-19T14:44:09 CST" duration-ms="5082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:44:09 CST" name="setUp" finished-at="2023-02-19T14:44:32 CST" duration-ms="22457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:4, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:44:32 CST" name="loginPageTitleTest" finished-at="2023-02-19T14:44:35 CST" duration-ms="3019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pom.qa.testcases.LoginPageTest@3c7f66c4]" started-at="2023-02-19T14:44:35 CST" name="tearDown" finished-at="2023-02-19T14:44:40 CST" duration-ms="4731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.pom.qa.testcases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.pom.qa.testcases.HomePageTest -->
+    </test> <!-- GRP-init2 -->
+  </suite> <!-- POMTest by groups -->
 </testng-results>

@@ -1,5 +1,4 @@
 package com.pom.qa.base;
-/* auther chaitali patel*/
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -7,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -72,6 +72,9 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
+		
+		Logger print = Logger.getLogger("devpinoyLogger");
+		print.debug("hello POMTest");  //System.out.println("hello");
 		
 	}
 	

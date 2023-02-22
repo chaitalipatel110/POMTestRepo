@@ -8,13 +8,13 @@
   <test name="POMTest Test Cases">
     <classes>
       <class name="com.pom.qa.testcases.LoginPageTest"/>
-      <!-- <class name="com.pom.qa.testcases.HomePageTest"/>  
+      <class name="com.pom.qa.testcases.HomePageTest"/>  
       <class name="com.pom.qa.testcases.ProfilePageTest"/>
       <class name="com.pom.qa.testcases.OrderhistoryPageTest"/>
       <class name="com.pom.qa.testcases.CreditcardsPageTest"/>
       <class name="com.pom.qa.testcases.UpdatepasswrdPageTest"/>
       <class name="com.pom.qa.testcases.WishlistPagetest"/>
-      <class name="com.pom.qa.testcases.AddressesPageTest"/>-->
+      <class name="com.pom.qa.testcases.AddressesPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

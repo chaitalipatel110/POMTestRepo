@@ -11,6 +11,7 @@ import com.pom.qa.pages.HomePage;
 import com.pom.qa.pages.LoginPage;
 import com.pom.qa.pages.OrderhistoryPage;
 import com.pom.qa.pages.ProfilePage;
+import com.pom.qa.pages.SealyPage;
 import com.pom.qa.pages.UpdatepasswordPage;
 import com.pom.qa.pages.WishlistPage;
 
@@ -24,6 +25,7 @@ public class HomePageTest extends TestBase{
 	AddressesPage addressesPage;
 	WishlistPage wishlistPage;
 	ProfilePage profilePage;
+	SealyPage sealypage;
 	int logedbox=0;
 	String loginboxactualcss = "display: block;";
 	String myaccountboxactualcss = "account active";
@@ -42,21 +44,25 @@ public class HomePageTest extends TestBase{
 		addressesPage = new AddressesPage();
 		wishlistPage = new WishlistPage();
 		profilePage = new ProfilePage();
-		
+		sealypage = new SealyPage();
 		loginPage.clickminimizeicon();
 		
+		
 		loginPage.clickloginicon();
+		
 		String verifyloginbox = loginPage.verifyloginbox();
+
 	    if(verifyloginbox.equals(loginboxactualcss)) {
 			homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 			logedbox=1;
+			System.out.println("test1");
 			Thread.sleep(3000);
 		}
 	}
 		
 		
 	@Test(priority = 1)
-	public void pommyaccountTest() {	
+	public void pommyaccountTest() {
 		if(logedbox==1) {
 			homePage.clickmyaccounticon();
 			String verifymyaccountbox = homePage.verifymyaccountbox();
@@ -157,12 +163,13 @@ public class HomePageTest extends TestBase{
 	@Test(priority = 10,groups = "init2")
 	public void click_Sealy_Test() throws InterruptedException {
 		if(logedbox==1) {
-			//SealyPage = homePage.click_Sealy_link();
-			homePage.click_Sealy_link();
-			Thread.sleep(3000);
+			sealypage = homePage.click_Sealy_link();
+			//homePage.click_Sealy_link();
+			Thread.sleep(5000);
 			System.out.println("Test 10 Pass");
 		}
 	}
+	
 	
 	@AfterMethod(groups = "init2")
 	public void tearDown() {
